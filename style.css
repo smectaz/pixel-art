@@ -1,17 +1,13 @@
+
 body {
     box-sizing: border-box;
 }
-
-.container {
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
 .pixel {
     width: 100px;
     height: 100px;
     background-color: green;
     border: 1px solid white;
+
     animation-name: color;
     animation-duration: 10s;
     transition: transform 1s;
@@ -55,4 +51,11 @@ body {
     to {
         left: 2000px;
     }
+
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 30px;
+
 }

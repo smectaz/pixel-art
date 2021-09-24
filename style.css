@@ -1,5 +1,10 @@
-* {
+body {
     box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .pixel {
@@ -7,9 +12,47 @@
     height: 100px;
     background-color: green;
     border: 1px solid white;
+    animation-name: color;
+    animation-duration: 10s;
+    transition: transform 1s;
 }
 
-.container {
-    margin: 0 auto;
-    margin-top: 30px;
+@keyframes color {
+    0% {
+        background-color: green;
+    }
+    20% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: red;
+    }
+    40% {
+        background-color: blue;
+    }
+    60% {
+        background-color: grey;
+    }
+    80% {
+        background-color: pink;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+.anim {
+    position: relative;
+    animation-name: animpixel;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animpixel {
+    from {
+        left: -2000px;
+    }
+    to {
+        left: 2000px;
+    }
 }
